@@ -2,39 +2,98 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>hosting website</title>
+  <title>Static Site – Cloudflare Pages</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <meta name="description" content="Static website hosted on Cloudflare Pages">
+  <meta name="description" content="Documentation for static website hosted on Cloudflare Pages">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <h1>Cloudflare Pages</h1>
-    <p>Static website hosted without any server</p>
-  </header>
+<header>
+  <h1>Static Website Documentation</h1>
+  <p>Hosted using Cloudflare Pages (No Server)</p>
+</header>
 
-  <main>
-    <section class="card">
-      <h2>Status</h2>
-      <p>This site is running on <strong>Cloudflare Pages</strong>.</p>
-    </section>
+<main>
 
-    <section class="card">
-      <h2>Security</h2>
-      <ul>
-        <li>No server</li>
-        <li>No IP address</li>
-        <li>DDoS protected</li>
-        <li>Free SSL Certificate</li>
-      </ul>
-    </section>
-  </main>
+  <section class="card">
+    <h2>📌 What is this website?</h2>
+    <p>
+      This is a <strong>static website</strong>.  
+      It contains only HTML, CSS, and JavaScript files.
+    </p>
+    <p>
+      There is <strong>no backend server</strong>, no EC2, and no database.
+    </p>
+  </section>
 
-  <footer>
-    <p>© 2026 Your Company</p>
-  </footer>
+  <section class="card">
+    <h2>🌍 How is this site hosted?</h2>
+    <ul>
+      <li>Source code is stored in <strong>GitHub</strong></li>
+      <li>Hosting is done using <strong>Cloudflare Pages</strong></li>
+      <li>Cloudflare serves files from its global CDN</li>
+      <li>No server IP is exposed</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>⚙️ CI/CD – How deployment works</h2>
+    <p>
+      Deployment is automatic.
+    </p>
+    <ol>
+      <li>Make a change in GitHub (or local machine)</li>
+      <li>Commit the change</li>
+      <li>Cloudflare automatically deploys it</li>
+    </ol>
+    <p>
+      No manual deployment steps are required.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>🔁 Rollback – How to go back to old version</h2>
+    <p>
+      Cloudflare keeps history of all deployments.
+    </p>
+    <ul>
+      <li>If something breaks, rollback can be done from Cloudflare Dashboard</li>
+      <li>Rollback is instant and has no downtime</li>
+      <li>GitHub code does NOT change automatically</li>
+    </ul>
+    <p>
+      After rollback, GitHub should be fixed manually.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>🔐 Security</h2>
+    <ul>
+      <li>No server to attack</li>
+      <li>No SSH or open ports</li>
+      <li>DDoS protection by Cloudflare</li>
+      <li>WAF and Bot protection available</li>
+      <li>Free SSL (HTTPS)</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>💰 Cost</h2>
+    <p>
+      Hosting cost is <strong>zero</strong> for static websites.
+    </p>
+    <p>
+      No EC2, no load balancer, no NAT gateway.
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  <p>Documentation maintained via GitHub & Cloudflare Pages</p>
+</footer>
 
 </body>
 </html>
+
